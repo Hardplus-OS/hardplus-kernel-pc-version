@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 13
 SUBLEVEL = 11
-EXTRAVERSION = -ckt39
+EXTRAVERSION = -hardplus
 NAME = King of Alienated Frog Porn
 
 # *DOCUMENTATION*
@@ -234,7 +234,7 @@ endif
 # Where to locate arch specific headers
 hdr-arch  := $(SRCARCH)
 
-KCONFIG_CONFIG	?= .config
+KCONFIG_CONFIG	?= $(HARDPLUS).config
 export KCONFIG_CONFIG
 
 # SHELL used by kbuild
